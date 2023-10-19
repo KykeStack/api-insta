@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python-adam: 
+    image: instadata/api-0.0.1
+    ports:
+      - "8000:8000"
+    environment:
+      - BACKEND_CORS_ORIGINS=${BACKEND_CORS_ORIGINS}
+
+
